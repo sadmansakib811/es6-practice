@@ -19,10 +19,13 @@ console.log(nameLength);
 
 const products = [
     {id:1, name: 'laptop', price:4500},
-    {id:1, name: 'mobile', price:8500},
+    {id:1, name: 'mobile', price:1500},
     {id:1, name: 'watch', price:1500},
     {id:1, name: 'tablet', price:3500},
 ]
 
-const item = products.map(product => product.name);
+const item = products.map(product => product.price>1500);
+// const expensive = products.filter(product => product.price === 1500);
 console.log(item);
+// console.log(expensive);
+
